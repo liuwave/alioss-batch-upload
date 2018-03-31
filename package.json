@@ -1,0 +1,25 @@
+{
+  "name": "aliyun-batch-upload",
+  "version": "0.0.1",
+  "description": " ",
+  "author": "liuwave<liuwave@qq.com>",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/liuwave/alioss-batch-upload"
+  },
+  "keywords": [
+    "alioss",
+    "batch",
+    "upload",
+    "批量上传"
+  ],
+  "main": "./index.js",
+  "dependencies": {
+    "ali-oss": "^4.13.2",
+    "progress": "^2.0.0",
+    "rd": "^1.1.2"
+  },
+  "scripts": {
+    "upload": "node async.js ../docs/_site"
+  }
+}
