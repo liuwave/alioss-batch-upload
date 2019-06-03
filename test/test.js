@@ -1,10 +1,10 @@
 let aliOssBatchUpload = require('../');
 
 let handler = new aliOssBatchUpload({
-  accessKeyId: '',
-  accessKeySecret: '',
+  accessKeyId: 'your accessKeySecret',
+  accessKeySecret: 'your accessKeySecret',
   region: 'oss-cn-beijing',
-  bucket: '*',
+  bucket: 'your bucket',
   ossDir: '/test/',//阿里云OSS根目录，默认为'/',
   pattern: '',
   internal: false
