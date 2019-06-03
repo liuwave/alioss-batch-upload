@@ -1,6 +1,6 @@
 {
   "name": "aliyun-batch-upload",
-  "version": "0.0.1",
+  "version": "1.2.0",
   "description": " ",
   "author": "liuwave<liuwave@qq.com>",
   "repository": {
@@ -11,15 +11,19 @@
     "alioss",
     "batch",
     "upload",
-    "批量上传"
+    "批量上传",
+    "Sync upload",
+    "同步上传"
   ],
   "main": "./index.js",
   "dependencies": {
-    "ali-oss": "^4.13.2",
+    "ali-oss": "^6.1.1",
+    "chalk": "^2.4.2",
     "progress": "^2.0.0",
     "rd": "^1.1.2"
   },
-  "scripts": {
-    "upload": "node async.js ../docs/_site"
-  }
+  "engines": {
+    "node": ">=4"
+  },
+  "license": "MIT"
 }

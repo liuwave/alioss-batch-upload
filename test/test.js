@@ -1,12 +1,13 @@
-var ABU=require('../');
+let aliOssBatchUpload = require('../');
 
-var a=new ABU({
-	accessKeyId: 'x',
-	accessKeySecret: 'x',
-	region: 'oss-cn-beijing',
-	bucket: 'quill-docs',
-	ossDir:'/test/',
-	internal:true
+let handler = new aliOssBatchUpload({
+  accessKeyId: '',
+  accessKeySecret: '',
+  region: 'oss-cn-beijing',
+  bucket: '*',
+  ossDir: '/test/',//阿里云OSS根目录，默认为'/',
+  pattern: '',
+  internal: false
 })
 
-a.upload('./');
+handler.upload('./')

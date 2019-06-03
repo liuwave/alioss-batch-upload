@@ -1,5 +1,5 @@
 # alioss-batch-upload
-阿里云OSS，遍历目录并批量上传至阿里云OSS
+遍历本地目录并批量上传至阿里云OSS
 
 
 
@@ -20,10 +20,11 @@ var abu=new ABU({
 	region: 'your region',
 	bucket: 'your bucket',
 	ossDir:'/test/',//阿里云OSS根目录，默认为'/',
-	pattern:''
-	
+	pattern:''	
 })
-abu.upload('./');//上传当前目录
+abu.upload('./',{
+	//options
+});//上传当前目录
 ```
 ## option参数
 
@@ -48,7 +49,14 @@ function pattern(filename) {
 
 ## 运行效果
 ```text
->node test/test.js
-[==================================================]   28/28  error:no_error
+扫描文件中...
+已扫描1个文件
+已扫描2个文件
+扫描完成，共扫描2个文件
+test/index.html C:\work\alioss-batch-upload\test\index.html
+[--------------------------------------------------]   1/2  test/index.htmltest/test.js C:\work\alioss-batch-upload\test\test.js
+[==================================================]   2/2  test/test.js
+
 完成
+
 ```
